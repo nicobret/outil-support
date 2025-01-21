@@ -1,0 +1,7 @@
+.DS_Store
+*/*.DS_Store
+.DS_Store
+bfg.jar
+.vscode
+**/.turbo
+node_modules

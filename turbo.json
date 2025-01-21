@@ -1,0 +1,31 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "globalDependencies": [".env"],
+    "globalEnv": ["DEV", "SCW_*"],
+    "tasks": {
+      "build": {
+        "outputs": ["dist/**", "!.dist/cache/**"]
+      },
+      "dev": {
+        "cache": false,
+        "persistent": true,
+        "outputs": ["dist/**", "build/**"],
+        "dependsOn": ["^build"]
+      },
+      "start": {
+        "outputs": [".launch/**", "!.launch/cache/**"]
+      },
+      "test": {
+        "cache": false,
+        "persistent": true,
+        "outputs": ["dist/**", "build/**"]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "clean": {
+        "cache": false
+      }
+    }
+  }
+  
