@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Light_Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Regular_Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Medium_Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Bold_Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-ExtraBold_Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Thin_Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src:
+    local("Marianne"),
+    url("./fonts/Marianne/Marianne-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: "Marianne", sans-serif;
+}
+
+ul {
+  list-style: none;
+  position: 0;
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
