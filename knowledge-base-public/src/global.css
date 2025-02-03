@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Regular_Italic.woff);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Bold_Italic.woff);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Medium_Italic.woff);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-ExtraBold.woff);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-ExtraBold_Italic.woff);
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Light.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Light_Italic.woff);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Thin.woff);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Marianne;
+  src: url(/fonts/Marianne-Thin_Italic.woff);
+  font-weight: 100;
+  font-style: italic;
+}
+
+* {
+  font-family: Marianne, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content {
+  max-width: calc(100vw - 3.5rem);
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+
+/*
+
+Toastify
+
+*/
+
+.Toastify button {
+  width: auto;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/*
+
+TABLE
+
+*/
+.resizer {
+  /* Displayed at the right side of column */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.resizer:hover,
+.resizing {
+  border-right: 2px solid blue;
+}
+
+/*
+
+SLATEJS
+
+*/
+
+body {
+  margin: 0;
+}
+
+#text-editor p {
+  margin: 0;
+}
+
+#text-editor pre {
+  padding: 10px;
+  background-color: #eee;
+  white-space: pre-wrap;
+}
+
+#text-editor :not(pre) > code {
+  font-family: monospace;
+  background-color: #eee;
+  padding: 3px;
+}
+
+#text-editor img {
+  max-width: 100%;
+  max-height: 20em;
+}
+
+#text-editor blockquote {
+  border-left: 2px solid #ddd;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  color: #6B7280;
+  font-style: italic;
+}
+
+#text-editor blockquote[dir="rtl"] {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 10px;
+  border-right: 2px solid #ddd;
+}
+
+#text-editor h3 {
+  font-size: 1.2em;
+}
+
+#text-editor table {
+  border-collapse: collapse;
+}
+
+#text-editor td {
+  padding: 10px;
+  border: 2px solid #ddd;
+}
+
+#text-editor iframe {
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+#text-editor [data-slate-editor] > * + * {
+  margin-top: 1em;
+}
+
+#text-editor [data-slate-editor] h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  #text-editor [data-slate-editor] h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+#text-editor [data-slate-editor] h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+#text-editor [data-slate-editor] h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#text-editor ul {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+
+#text-editor ul li {
+  margin-left: 2rem;
+}
+
+#text-editor ol {
+  list-style: decimal;
+  margin: initial;
+  padding: initial;
+}
+
+#text-editor ol li {
+  margin-left: 2rem;
+}
+
+#text-editor-metadata-input::after {
+  content: "(Ce lien n'apparaitra pas dans l'article publié)";
+  position: absolute;
+  top: 2rem;
+}
+
+.debug * {
+  border: 2px solid black;
+}
+
+.with-emoji {
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji", -apple-system, BlinkMacSystemFont,
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important ;
+}
+
+/* animation placeholder */
+
+.animated-background {
+  position: absolute;
+  left: -45%;
+  height: 100%;
+  width: 45%;
+  background-image: linear-gradient(to left, rgba(251, 251, 251, 0.05), rgba(251, 251, 251, 0.15), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.15), rgba(251, 251, 251, 0.05));
+  background-image: -moz-linear-gradient(
+    to left,
+    rgba(251, 251, 251, 0.05),
+    rgba(251, 251, 251, 0.15),
+    rgba(251, 251, 251, 0.3),
+    rgba(251, 251, 251, 0.15),
+    rgba(251, 251, 251, 0.05)
+  );
+  background-image: -webkit-linear-gradient(
+    to left,
+    rgba(251, 251, 251, 0.05),
+    rgba(251, 251, 251, 0.15),
+    rgba(251, 251, 251, 0.3),
+    rgba(251, 251, 251, 0.15),
+    rgba(251, 251, 251, 0.05)
+  );
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media print {
+  .noprint {
+    display: none !important;
+  }
+  *::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
